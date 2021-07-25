@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/d630a507d8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Aly's Cosmic Scoops Online Ordering</title>
+</head>
+<body>
+    <main>
+    
+     <!-- This is the larger screen nav menu -->
+    <nav>
+        <div class="navbar">
+            <a href="#header">Our Favorites</a>
+            <a href="#dessert">Your Information</a>
+            <a href="#footer">Contact Us</a>
+            
+        </div>
+        
+</nav>
+     
+      <!-- This is the mobile nav bar (hamburger menu) -->
+    <div class="mobilenav">
+      <a href="#landing" class="active">Best Scoops in Louisville</a>
+  
+        <div id="navLinks">
+            <a href="#header">Our Favorites</a>
+            <a href="#dessert">Your Info</a>
+            
+      </div>
+     
+
+      
+      
+  <!-- this toggles the navbar from the mobile view to the desktop view using JS -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+           
+      
+      
+       <!-- This is the Landing Area for the Page -->
+        
+            <div id="landing">
+            <div id="landing-text">
+                <div id="landing-text-inner">
+                    <h1>Aly's Cosmic Scoops</h1>
+                    </div>   
+            </div>
+            <div id="landing-description">
+            <div id="icon-2">
+            <i class="fas fa-ice-cream fa-4x fa-pulse"></i>
+               </div>
+                         
+                <h3 class="landing-description"><i>Welcome onboard the cosmic spaceship! Order below. </i>
+                </h3>
+            </div>
+        </div>
+        
+        
+        
+         <!-- This is the ice cream menu section -->
+        
+            <div id="header">
+                <h2>Try Our Favorites</h2>
+            </div>
+            <div class="flex-container">
+            <div class="flex-child">
+            <h3 class="favorite-1">Lemon Blueberry Galaxy $5</h3>
+            
+            <img src="https://source.unsplash.com/8beTH4VkhLI/1600x900/" alt="">
+            <div class="caption">
+                <p>A lightly refreshing mix of fresh picked blueberries and lemon essence mixed into artisan bean ice cream.</p>
+            </div>
+            </div>
+       <div class="flex-child">
+            <div class="flavor">
+            <h3>The Milky Way $5</h3>
+            </div>
+                
+            
+            <img src="https://source.unsplash.com/wxmrTxUAMJE/1600x900/" alt=""> 
+            <div class="caption">
+                <p>A decadent chocolate ice cream packed full of Milky Way candy pieces and topped with caramel drizzle.</p>
+            </div>
+            </div>
+        <div class="flex-child">
+            <h3 class="favorite-1">Sprinkled Stardust $5</h3>
+           
+            <img src="https://source.unsplash.com/5A0O12BIsjY/1600x900/" alt="">
+            <div class="caption">
+                <p>If sprinkles are your thing, this is your cream! A perfectly crafted vanilla bean base, filled with a variety of colorful sprinkles and topped with sugar cookie dust.</p>
+            </div>
+           </div>
+           <div class="flex-child">
+            <div class="flavor">
+            <h3>Oreo Moon Rock Shake $6</h3>
+            </div>
+                
+            <img src="https://source.unsplash.com/OPncjOLjXis/1600x900/" alt=""> 
+            <div class="caption">
+                <p>A rich chocolate ice cream packed full of Oreo cookies. You will need a spoon and a straw for this one! Lots of cookie <strong>chunks</strong>, not pieces.</p>
+            </div>
+                </div>
+                <div class="flex-child">
+            <h3 class="favorite-1">The Zero Gravity $6</h3>
+            <img src="https://source.unsplash.com/zgl4LvTL06c/1600x900/" alt="">
+            <div class="caption">
+                <p>The gluten-free Zero Gravity contains only 4g net carbs and 45 calories, so you can feel weightless in the cosmos!</p>
+            </div>
+            </div>
+            </div>
+        
+        
+        
+         <!-- This is the order form -->
+            
+            <h3 class="form_h3">Place an Order</h3>
+            <label for="fname">Your Dessert Choice:</label>
+            <input type="text" id="dessert" name="dessert">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" >
+           
+            
+  
+           
+           
+           <!-- Tip Calculator -->
+           <h4> Feeling Generous? Tip 20% With Our Tip Calculator!</h4>
+<form action="javascript:void(calc())">
+        Enter Dessert Price: <br>$<input id="bill" type="text">
+        <br>
+        <input class="order_btn" type="submit" value="Calculate">
+        <br>
+        Your 20% tip is: <span id="tip"></span>
+        <br>
+        Your total is: <span id="total"></span>
+    </form>
+  
+
+          
+           
+           <!-- The Submit Button -->
+        <input class="order_btn" type="button" value="Submit Order" onclick="myfunction()">
+               
+    
+ 
+
+    </main>
+    
+    
+    
+    <!-- Contact Us Section -->
+    <footer>
+        <h3 class="footer-text">We're Here to Help</h3>
+        <p>Questions about the menu or have special requests?<br> Call us!</p>
+        <p>Phone: 502-555-1287</p>
+    </footer>
+    
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
