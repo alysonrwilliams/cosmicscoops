@@ -8,6 +8,21 @@ function myFunction() {
   }
 }
 
+/*This is the Random Desert Generator */
+function randomDesertGenerator() {
+const deserts = [
+    "Lemon Blueberry Galaxy", 
+    "The Milky Way", 
+    "Sprinkled Stardust", 
+    "Oreo Moon Rock Shake", 
+    "The Zero Gravity"
+];
+    
+    const random = deserts[Math.random() * deserts.length | 0]
+    alert("We think you should order the " + random, deserts[random]);
+}
+
+
 
 
 /* This function validates the name field + prompts alert to customer on submit */
