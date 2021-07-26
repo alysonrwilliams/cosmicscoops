@@ -122,7 +122,7 @@
             <h3 class="form_h3">Place an Order</h3>
             <label for="fname">Your Dessert Choice:</label>
             <input type="text" id="dessert" name="dessert">
-            <label for="fname">First Name</label>
+            <label for="fname">Name for the Order:</label>
             <input type="text" id="fname" name="firstname" >
            
             
@@ -130,17 +130,16 @@
            
            
            <!-- Tip Calculator -->
-           <h4> Feeling Generous? Tip 20% With Our Tip Calculator!</h4>
-<form action="javascript:void(calc())">
-        Enter Dessert Price: <br>$<input id="bill" type="text">
-        <br>
-        <input class="order_btn" type="submit" value="Calculate">
-        <br>
-        Your 20% tip is: <span id="tip"></span>
-        <br>
-        Your total is: <span id="total"></span>
-    </form>
-  
+           <h4> Feeling Generous? Tip Us!</h4>
+           <span>Desert Order Total :</span>$<input type="text" id="bill" class="amount-field"> 
+              <br>
+           <span>What percent do you want to tip?:</span>
+           <input type="range" min="0" max="100" value="0" step="1" onchange="tipCalculator(this.value, 'bill')" class="range-style">
+           <span id="slideval">0%</span>
+           <h5>You are adding this tip = 
+            <span id="tipamount" class="tip-amount">$0.00</span>
+           </h5>
+           <h2>Total = </h2>
 
           
            

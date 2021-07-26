@@ -23,11 +23,23 @@ alert("Thanks, " +x + "! Your ice cream is being prepared!");
 
 
 /* Tip Calculator Function*/
-function calc() {
-        var bill = Number(document.getElementById('bill').value);
-        var tip = bill * .20;
-        var total_bill = bill + tip;
-
-        document.getElementById("tip").innerHTML= "$"+Number(tip).toFixed(2);
-        document.getElementById("total").innerHTML= "$"+Number(total_bill).toFixed(2);         
-    }
+function tipCalculator (slider, bill){
+  var tip = document.getElementById('tipamount');
+  var slideval = document.getElementById('slideval');
+  var bill = document.getElementById(bill).value;
+  var prcnt = slider * .01;
+  
+  
+  if (bill == null || bill == '') {
+    tip.innerHTML = 'Oops! Enter an amount.';
+    return false;
+  }
+  if(isNaN(bill)) {
+    tip.innerHTML = 'Oops! Make sure you entered a real number.';
+    return false;
+  }
+  if(bill >= 0){
+    tip.innerHTML = '$' + (bill * prcnt) .toFixed(2);
+  slideval.innerHTML = slider + '%';
+  }
+}
