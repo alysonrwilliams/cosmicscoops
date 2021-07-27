@@ -17,6 +17,7 @@ h1 {
     margin: 0;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    text-align: center;
 }
 
 h2 {
@@ -407,3 +408,23 @@ nav a {
   text-decoration-color: yellow;
   text-decoration-thickness: .08em;
     }
+    
+.picture-explanation-container {
+  display: flex;
+}
+
+#picture {
+  width: 50%;
+  margin-right: 1rem;
+}
+
+#explanation {
+  letter-spacing: 0px;
+  line-height: 25px;
+}
+    
+.nasa-container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 1rem;
