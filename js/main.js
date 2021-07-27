@@ -51,11 +51,15 @@ function tipCalculator (slider, bill){
     return false;
   }
   if(bill >= 0){
-    tip.innerHTML = '$' + (bill * prcnt) .toFixed(2);
+      var tipAmount = calculateTip(bill, prcnt);
+    tip.innerHTML = '$' + tipAmount .toFixed(2);
   slideval.innerHTML = slider + '%';
   }
 }
 
+function calculateTip(bill, percent) {
+    return bill * percent;
+}
 
 /* This is fetching the NASA API */
 
