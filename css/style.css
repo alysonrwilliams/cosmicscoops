@@ -102,20 +102,9 @@ main {
     text-align: center;
 }
 
-.btn {
-    padding: 0.5rem 2rem;
-    border: 1px #ccc solid;
-    display: inline-block;
-    margin: 2rem 0 0;
-    border-radius: 50px;
-    text-decoration: none;
-    color: #333;
-    transition: background 800ms ease;
-}
 
-.btn:hover {
-    background: #f4f4f4;
-}
+
+
 
 #header {
     padding: 12px;
@@ -223,18 +212,18 @@ label {
   background-color: #8ab1cf;
   color: white;
   padding: 12px;
-  margin: 15px 0px;
+  margin: 50px 350px;
   border: none;
-  width: 100%;
+  width: 20%;
   border-radius: 3px;
   cursor: pointer;
   font-size: 17px;
-    text-decoration: line-through;
-    text-decoration-color: yellow;
-    text-decoration-thickness: .08em;
+  text-decoration: line-through;
+  text-decoration-color: yellow;
+  text-decoration-thickness: .08em;
 }
 
-.btn:hover {
+.order_btn:hover {
   background-color: rgba(138, 177, 207, 0.65);
 }
 
@@ -253,7 +242,21 @@ span.price {
     text-decoration: line-through;
     text-decoration-color: yellow;
     text-decoration-thickness: .05em;
-   
+   }
+
+.randomgen_h3 {
+    text-align: center;
+    padding: 12px;
+    text-align: center;
+    background:rgba(0, 0, 0, 0.79);
+    color: #8ab1cf;
+    text-decoration: none;
+    text-decoration-color: yellow;
+    text-decoration-thickness: .05em;
+}
+
+.click_here {
+    text-align: center;
 }
 
 .footer-text {
@@ -395,19 +398,7 @@ nav a {
     text-align: center;   
     
 }
-.order_btn {
-  background-color: #8ab1cf;
-  color: white;
-  margin: 15px 0;
-  padding: 12px;
-  border: none;
-  width: 100%;
-  border-radius: 3px;
-  font-size: 17px;
-  text-decoration: line-through;
-  text-decoration-color: yellow;
-  text-decoration-thickness: .08em;
-    }
+
     
 .picture-explanation-container {
   display: flex;
@@ -428,3 +419,4 @@ nav a {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 1rem;
+    
