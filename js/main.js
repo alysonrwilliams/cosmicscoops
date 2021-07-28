@@ -35,6 +35,7 @@ alert("Thanks, " +x + "! Your ice cream is being prepared!");
 }
 
 /* This is the Tip Calculator Function*/
+
 function tipCalculator (slider, bill){
   var tip = document.getElementById('tipamount');
   var slideval = document.getElementById('slideval');
@@ -50,6 +51,7 @@ function tipCalculator (slider, bill){
     tip.innerHTML = 'Oops! Make sure you entered a real number.';
     return false;
   }
+    
   if(bill >= 0){
       var tipAmount = calculateTip(bill, prcnt);
     tip.innerHTML = '$' + tipAmount .toFixed(2);
@@ -63,7 +65,7 @@ function calculateTip(bill, percent) {
 
 /* This is fetching the NASA API */
 
-const url = 'https://api.nasa.gov/planetary/apod?api_key='
+const url = 'https://api.nasa.gov/planetary/apod?api_key=cq5SqQ5zqx1YK9aOVvHF2OzihtPy0nien6OX5fMA'
 const api_key = config.NASA_API_KEY
 
 const fetchNASAData = async () => {
