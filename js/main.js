@@ -66,11 +66,11 @@ function calculateTip(bill, percent) {
 /* This is fetching the NASA API */
 
 const url = 'https://api.nasa.gov/planetary/apod?api_key=cq5SqQ5zqx1YK9aOVvHF2OzihtPy0nien6OX5fMA'
-const api_key = config.NASA_API_KEY
+
 
 const fetchNASAData = async () => {
   try {
-    const response = await fetch(`${url}${api_key}`)
+    const response = await fetch(url)
     const data = await response.json()
     console.log('NASA APOD data', data)
     displayData(data)
